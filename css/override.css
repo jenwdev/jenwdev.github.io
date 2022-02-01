@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.card-img-top {
+	width: 100%;
+}
+.card-text {
+	padding: 0 20px 0 20px;
+}
+.card-body {
+	border-top: 1px lightgray solid;
+}
+.card-title{
+	margin-top: 10px;
+}
+
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 980px;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.ekko-lightbox-nav-overlay a {
+    color: #000;
+    font-size: 30px;
+}
+
+.fancybox__caption {
+    text-align: center;
+}
+
+
+
+.sld-thmb{
+    width: 100%;
+    border: #bcbcbcab solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sld-thmb:hover { cursor: pointer; }
+
+.nav-home{
+    color: rgba(255,255,255,.7) !important;
+}
+
+.nav-home a{
+    color: rgba(255,255,255,.7) !important;
+}
+
+.nav-home a:hover{
+    color: rgba(255,255,255) !important;
+    text-decoration: underline;
+}
+

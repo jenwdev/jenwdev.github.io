@@ -1,195 +1,318 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Portfolio</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
-<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-<link rel="stylesheet" type="text/css" href="css/3-col-portfolio.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
 
-</script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/override.css" rel="stylesheet" />
 </head>
 
-<body>
-<div class="container">
-	  <div class="row">
-    <div class="col text-center">
-      <h1>Portfolio</h1>
-    </div>
-  </div>
-<!--	 <div class="row">
-    <div class="col text-center">
-      <h2>Current</h2>
-    </div>
-  </div>-->
-  <div class="row">
-    <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-      <div class="card h-100"> <a href="https://presencehealth.org/" target="_blank"><img class="card-img-top" src="assets/images/amita-health.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title"><a href="https://amitahealth.org/" target="_blank"><strong>AMITA Health</strong></a> <br>
-          </h4>
-       </div>
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#pro">Professional Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#boot">Bootcamp Projects</a></li>
+          <!--   <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+        </ul>
       </div>
     </div>
-<!--    <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-      <div class="card h-100"> <a href="http://explorechicagoportfolio.com/" target="_blank"><img class="card-img-top" src="assets/images/explore-chicago.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title"><a href="http://explorechicagoportfolio.com/" target="_blank"><strong>Explore Chicago Portfolio</strong></a> <br>
-          </h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-      <div class="card h-100"> <a href="http://refresh.presencehealth.org" target="_blank"><img class="card-img-top" src="assets/images/refresh-blog.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title"><a href="http://refresh.presencehealth.org" target="_blank"><strong>Refresh Blog</strong></a></h4>
+  </nav>
+  <!-- Header-->
+  <!-- <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Welcome to Scrolling Nav</h1>
+                <p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p>
+                <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>
+            </div>
+        </header>-->
+  <!-- About section-->
+  <section id="pro">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg">
+          <h2>Professional Projects</h2>
+          <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. </p> -->
 
-       </div>
-      </div>
-    </div>-->
- <!-- </div>-->
-  <!---->
-<!--	 <div class="row">
-    <div class="col text-center">
-      <h2>Previous</h2>
-    </div>
-  </div>-->
+          <!-- AMITA -->
+          <div class="row">
+            <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+              <div class="card h-100"> <a href="https://amitahealth.org/" target="_blank"><img class="card-img-top"
+                    src="assets/images/amita-health.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="https://amitahealth.org/" target="_blank"><strong>AMITA
+                        Health</strong></a> <br>
+                  </h4>
+                </div>
+              </div>
+            </div>
 
- <!--   <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+            <!-- Presence Health -->
+            <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
 
-      <div class="card h-100"> <a href="https://presencehealth.org/" target="_blank"><img class="card-img-top" src="assets/images/presence-health.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title"><a href="https://presencehealth.org/" target="_blank"><strong>Presence Health</strong></a> <br>
-          </h4>
-       </div>
-      </div>
-    </div>
- 
-    <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-      <div class="card h-100"> <a href="http://refresh.presencehealth.org" target="_blank"><img class="card-img-top" src="assets/images/refresh-blog.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title"><a href="http://refresh.presencehealth.org" target="_blank"><strong>Refresh Blog</strong></a></h4>
+              <div class="card h-100"> <a href="presence-health.html" target="_blank"><img class="card-img-top"
+                    src="assets/images/presence-health.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="presence-health.html" target="_self"><strong>Presence
+                        Health</strong></a> <br>
+                  </h4>
+                </div>
+              </div>
+            </div>
 
-       </div>
-      </div>
-    </div>-->
-	  
-	   <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-      <div class="card h-100"> <a href="http://explorechicagoportfolio.com/" target="_blank"><img class="card-img-top" src="assets/images/explore-chicago.jpg" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title"><a href="http://explorechicagoportfolio.com/" target="_blank"><strong>Explore Chicago Portfolio</strong></a> <br>
-          </h4>
-        </div>
-      </div>
-    </div>
-   </div>
-  <!---->
-  <div class="row">
-    <div class="col text-center"  style="margin-top:30px;">
-      <h2>Northwestern Coding Bootcamp Projects</h2>
-      <div class="row">
-<!--        <div class="col-sm-4 portfolio-item">
-          <div class="card h-100"> <a href="https://greenboots.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/greenboots.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="https://greenboots.herokuapp.com/" target="_blank"><strong>Greenboots - Hiking App</strong></a> <br>
-                (<a href="https://greenboots.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/greenboots" target="_blank">GitHub</a>) </h4>
-              <div>
-                <p class="card-text">Mongo, Express, React, Node, Javascript, Redux, JWT, Postman, Google Maps, Bootstrap, HTML, and CSS</p>
+            <!-- Refresh Blog -->
+            <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+              <div class="card h-100"> <a href="refresh.html" target="_blank"><img class="card-img-top"
+                    src="assets/images/refresh-blog.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="refresh.html" target="_self"><strong>Refresh Blog</strong></a></h4>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Front-End -->
+            <!-- <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+                          <div class="card h-100"> <a href="frontend-dev.html" target="_blank"><img
+                                      class="card-img-top" src="assets/images/refresh-blog.jpg" alt=""></a>
+                              <div class="card-body">
+                                  <h4 class="card-title"><a href="frontend-dev.html"
+                                          target="_self"><strong>Front-End Developement Examples</strong></a></h4>
+
+                              </div>
+                          </div>
+                      </div> -->
+
+            <!-- JIRA -->
+            <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+              <div class="card h-100"> <a href="jira.html" target="_blank"><img class="card-img-top"
+                    src="assets/images/jira-service-desk.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="jira.html" target="_self"><strong>JIRA</strong></a></h4>
+                </div>
+              </div>
+            </div>
+
+              <!-- Pathways Behavioral Network -->
+              <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+                <div class="card h-100"> <a href="pathways.html" target="_blank"><img class="card-img-top"
+                      src="assets/images/pathways.jpg" alt=""></a>
+                  <div class="card-body">
+                    <h4 class="card-title"><a href="pathways.html" target="_self"><strong>Pathways Behavioral Network</strong></a></h4>
+                  </div>
+                </div>
+              </div>
+
+            <!-- HTML5 ADS -->
+            <!-- <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+              <div class="card h-100"> <a href="hmtl5-ads.html" target="_blank"><img class="card-img-top"
+                    src="assets/images/refresh-blog.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="html5-ads.html" target="_self"><strong>HMTL5 Animated Ads</strong></a>
+                  </h4>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Email -->
+            <!-- <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+              <div class="card h-100"> <a href="email.html" target="_blank"><img class="card-img-top"
+                    src="assets/images/refresh-blog.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="email.html" target="_self"><strong>Email/Newsletter</strong></a></h4>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Explore Chicago -->
+            <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+              <div class="card h-100"> <a href="http://explorechicagoportfolio.com/" target="_blank"><img
+                    class="card-img-top" src="assets/images/explore-chicago.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title"><a href="http://explorechicagoportfolio.com/" target="_blank"><strong>Explore
+                        Chicago Portfolio</strong></a> <br>
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
-        </div>-->
-        <div class="col-sm-4 portfolio-item" style="margin-top:15px;" >
-          <div class="card h-100"> <a href="https://quiet-anchorage-44737.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/space-adventure.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="https://quiet-anchorage-44737.herokuapp.com/" target="_blank"><strong>Space Adventure Game</strong></a> <br>
-                (<a href="https://quiet-anchorage-44737.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/clickygame" target="_blank">GitHub</a>) </h4>
-              <div>
-                <p class="card-text">React, Node and Javascript</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <ul>
+                            <li>Donec blandit mi et aliquet suscipit.</li>
+                            <li>In sodales dolor sit amet pharetra mollis.</li>
+                            <li>Phasellus posuere purus eget ipsum venenatis ultricies.</li>
+                            <li>Nullam non libero sed arcu cursus tempus vel ut neque.</li>
+                        </ul> -->
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- Services section-->
+  <section class="bg-light" id="boot" style="padding-top: 5em;">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg">
+          <h2>Northwestern University Coding Bootcamp Projects</h2>
+
+          <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. </p> -->
+          <div class="row">
+            <div class="col text-center" style="margin-top:30px;">
+              <div class="row">
+                <!--        <div class="col-sm-4 portfolio-item">
+                                  <div class="card h-100"> <a href="https://greenboots.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/greenboots.jpg" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title"><a href="https://greenboots.herokuapp.com/" target="_blank"><strong>Greenboots - Hiking App</strong></a> <br>
+                                        (<a href="https://greenboots.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/greenboots" target="_blank">GitHub</a>) </h4>
+                                      <div>
+                                        <p class="card-text">Mongo, Express, React, Node, Javascript, Redux, JWT, Postman, Google Maps, Bootstrap, HTML, and CSS</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>-->
+                <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
+                  <div class="card h-100"> <a href="https://quiet-anchorage-44737.herokuapp.com/" target="_blank"><img
+                        class="card-img-top" src="assets/images/space-adventure.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"><a href="https://quiet-anchorage-44737.herokuapp.com/"
+                          target="_blank"><strong>Space Adventure Game</strong></a> <br>
+                        (<a href="https://quiet-anchorage-44737.herokuapp.com/" target="_blank">Heroku</a> or <a
+                          href="https://github.com/jenjenw23/clickygame" target="_blank">GitHub</a>) </h4>
+                      <div>
+                        <p class="card-text">React, Node and Javascript</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="col-sm-4 portfolio-item">
+                                  <div class="card h-100"> <a href="https://arcane-bastion-92075.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/news-scraper.jpg" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title"><a href="https://arcane-bastion-92075.herokuapp.com" target="_blank"><strong>Mongo Scrape - News Scraper App</strong></a> <br>
+                                        (<a href="https://arcane-bastion-92075.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/News-Scraper" target="_blank">GitHub</a>) </h4>
+                                      <div>
+                                        <p class="card-text">Mongo, Mongoose, Node, Express and Handlebars</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>-->
+                <!-- <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
+                                  <div class="card h-100"> <a href="https://infinite-springs-40230.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/beneFare.jpg" alt=""></a>
+                                    <div class="card-body">
+                                      <h4 class="card-title"><a href="https://infinite-springs-40230.herokuapp.com/" target="_blank"><strong>BeneFare - Ride Share Fare Finder App</strong></a> <br>
+                                        (<a href="https://infinite-springs-40230.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/Fare-Finder" target="_blank">GitHub</a>) </h4>
+                                      <p class="card-text">MySQL, Node, Express, Handlebars, Sequelize, Google Maps, Lyft, Uber, AWS</p>
+                                    </div>
+                                  </div>
+                                </div>-->
+                <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
+                  <div class="card h-100"> <a href="https://obscure-chamber-50709.herokuapp.com/" target="_blank"><img
+                        class="card-img-top" src="assets/images/burger-time.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"><a href="https://obscure-chamber-50709.herokuapp.com/"
+                          target="_blank"><strong>Sequelized Burger Time</strong></a> <br>
+                        (<a href="https://obscure-chamber-50709.herokuapp.com/" target="_blank">Heroku</a> or <a
+                          href="https://github.com/jenjenw23/Burger-App" target="_blank">GitHub</a>) </h4>
+                      <p class="card-text">MySQL, Node, Express, Handlebars, and Sequelize </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
+                  <div class="card h-100"> <a href="https://nameless-temple-27391.herokuapp.com/" target="_blank"><img
+                        class="card-img-top" src="assets/images/burger-time.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"><a href="https://nameless-temple-27391.herokuapp.com/"
+                          target="_blank"><strong>Burger Time</strong></a> <br>
+                        (<a href="https://nameless-temple-27391.herokuapp.com/" target="_blank">Heroku</a> or <a
+                          href="https://github.com/jenjenw23/sequelizedBurger" target="_blank">GitHub</a>) </h4>
+                      <p class="card-text">MySQL, Node, Express, Handlebars, and ORM </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 portfolio-item text-center">
+                  <div style="margin-top:15px;" class="card h-100"> <a href="https://github.com/jenjenw23/Bamazon"
+                      target="_blank"><img class="card-img-top" src="assets/images/bamazon.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="https://github.com/jenjenw23/Bamazon"
+                          target="_blank"><strong>Project Bamazon</strong></a> </h4>
+                      <p class="card-text">Node.js and MySQL</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 portfolio-item text-center">
+                  <div style="margin-top:15px;" class="card h-100"> <a href="https://jenjenw23.github.io/TrainApp/"><img
+                        class="card-img-top" src="assets/images/train-tracker.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="https://jenjenw23.github.io/TrainApp/"><strong>Train
+                            Tracker</strong></a> </h4>
+                      <p class="card-text">JavaScript, Fireabase, HTML</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 portfolio-item text-center">
+                  <div style="margin-top:15px;" class="card h-100"> <a href="https://jenjenw23.github.io/TriviaGame/"
+                      target="_blank"><img class="card-img-top" src="assets/images/chicago-trivia.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="https://jenjenw23.github.io/TriviaGame/"
+                          target="_blank"><strong>Trivia Game</strong></a> </h4>
+                      <p class="card-text">JavaScript and HTML</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
+                  <div style="margin-top:15px;" class="card h-100"> <a href="https://jenjenw23.github.io/week-4-game/"
+                      target="_blank"><img class="card-img-top" src="assets/images/crystals.jpg" alt=""></a>
+                    <div class="card-body">
+                      <h4 class="card-title"> <a href="https://jenjenw23.github.io/week-4-game/"
+                          target="_blank"><strong>Crystals Collector Game</strong></a> </h4>
+                      <p class="card-text">JavaScript and HTML</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!--<div class="col-sm-4 portfolio-item">
-          <div class="card h-100"> <a href="https://arcane-bastion-92075.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/news-scraper.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="https://arcane-bastion-92075.herokuapp.com" target="_blank"><strong>Mongo Scrape - News Scraper App</strong></a> <br>
-                (<a href="https://arcane-bastion-92075.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/News-Scraper" target="_blank">GitHub</a>) </h4>
-              <div>
-                <p class="card-text">Mongo, Mongoose, Node, Express and Handlebars</p>
-              </div>
-            </div>
-          </div>
-        </div>-->
-       <!-- <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
-          <div class="card h-100"> <a href="https://infinite-springs-40230.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/beneFare.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="https://infinite-springs-40230.herokuapp.com/" target="_blank"><strong>BeneFare - Ride Share Fare Finder App</strong></a> <br>
-                (<a href="https://infinite-springs-40230.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/Fare-Finder" target="_blank">GitHub</a>) </h4>
-              <p class="card-text">MySQL, Node, Express, Handlebars, Sequelize, Google Maps, Lyft, Uber, AWS</p>
-            </div>
-          </div>
-        </div>-->
-        <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
-          <div class="card h-100"> <a href="https://obscure-chamber-50709.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/burger-time.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="https://obscure-chamber-50709.herokuapp.com/" target="_blank"><strong>Sequelized Burger Time</strong></a> <br>
-                (<a href="https://obscure-chamber-50709.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/Burger-App" target="_blank">GitHub</a>) </h4>
-              <p class="card-text">MySQL, Node, Express, Handlebars, and Sequelize            </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 portfolio-item" style="margin-top:15px;">
-          <div class="card h-100"> <a href="https://nameless-temple-27391.herokuapp.com/" target="_blank"><img class="card-img-top" src="assets/images/burger-time.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="https://nameless-temple-27391.herokuapp.com/" target="_blank"><strong>Burger Time</strong></a> <br>
-                (<a href="https://nameless-temple-27391.herokuapp.com/" target="_blank">Heroku</a> or <a href="https://github.com/jenjenw23/sequelizedBurger" target="_blank">GitHub</a>) </h4>
-              <p class="card-text">MySQL, Node, Express, Handlebars, and ORM            </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-          <div class="card h-100"> <a href="https://github.com/jenjenw23/Bamazon" target="_blank"><img class="card-img-top" src="assets/images/bamazon.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"> <a href="https://github.com/jenjenw23/Bamazon" target="_blank"><strong>Project Bamazon</strong></a> </h4>
-              <p class="card-text">Node.js and MySQL</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 portfolio-item text-center" style="margin-top:15px;">
-          <div class="card h-100"> <a href="https://jenjenw23.github.io/TrainApp/"><img class="card-img-top" src="assets/images/train-tracker.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"> <a href="https://jenjenw23.github.io/TrainApp/"><strong>Train Tracker</strong></a> </h4>
-              <p class="card-text">JavaScript, Fireabase, HTML</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 portfolio-item text-center">
-          <div style="margin-top:15px;" class="card h-100"> <a href="https://jenjenw23.github.io/TriviaGame/" target="_blank"><img class="card-img-top" src="assets/images/chicago-trivia.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"> <a href="https://jenjenw23.github.io/TriviaGame/" target="_blank"><strong>Trivia Game</strong></a> </h4>
-              <p class="card-text">JavaScript and HTML</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 portfolio-item text-center">
-          <div style="margin-top:15px;" class="card h-100"> <a href="https://jenjenw23.github.io/week-4-game/" target="_blank"><img class="card-img-top" src="assets/images/crystals.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title"> <a href="https://jenjenw23.github.io/week-4-game/" target="_blank"><strong>Crystals Collector Game</strong></a> </h4>
-              <p class="card-text">JavaScript and HTML</p>
+              <!-- /.row -->
             </div>
           </div>
         </div>
       </div>
-      <!-- /.row --> 
     </div>
-  </div>
-</div>
+  </section>
+  <!-- Contact section-->
+  <!--        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Contact us</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container px-4">
+      <!-- <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p> -->
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>
