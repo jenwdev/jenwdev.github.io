@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+		
+		<meta charset="utf-8">
+		<meta name="ad.size" content="width=300,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Presence Health: Midwifery - Peace of Mind - 300x250</title>
+
+		<script>
+			var clickTag = "";
+		</script>
+
+		<style>
+			body {
+				padding: 0px;
+				margin: 0px;
+				font-size: 100%;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				background-color: #ffffff;
+			}
+
+			#container {
+				position: relative;
+				width: 300px;
+				height: 250px;
+				overflow: hidden;
+				box-sizing: border-box;
+				margin: 0 auto;
+
+			}
+
+			#banner {
+				visibility: hidden;
+				position: relative;
+				overflow: hidden;
+				box-sizing: border-box;
+				width: 300px;
+				height: 250px;
+				background-color: #ffffff;
+				cursor: pointer;
+			}
+
+			.border {
+				z-index: 20;
+				position: absolute;
+				top: 0;
+				left: 0;
+				box-sizing: border-box;
+				width: 300px;
+				height: 250px;
+				border: 1px solid #010101;
+			}
+			
+			#vignette,
+			#bg_img {
+				z-index: 10;
+				visibility: hidden;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 300px;
+				height: 204px;
+			}
+			#vignette {
+				z-index: 11;
+			}
+
+			#logo {
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 204px;
+				left: 168px;
+				width: 131px;
+				height: 46px;
+			}
+			
+			#cta_btn {
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 204px;
+				left: 0;
+				width: 169px;
+				height: 46px;
+			}
+
+			#intro_text2,
+			#intro_text1 {
+				z-index: 11;
+				position: absolute;
+				top: 70px;
+				left: 135px;
+				visibility: hidden;
+				width: 165px;
+				height: 70px;
+			}
+
+			.end-bg {
+				z-index: 11;
+				visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 169px;
+				height: 204px;
+				background-color: #ffffff;
+			}
+
+			#end_frame_text01,
+			#end_frame_text02 {
+				/*visibility: hidden;*/
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 169px;
+				height: 204px;
+			}
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			 
+			<div id="banner">
+				<div class="border"></div>
+				<img id="bg_img" src="primarycare_midwifery_bg.jpg">
+				<img id="vignette" src="primarycare_midwifery_vignette.png">
+				<img id="cta_btn" src="primarycare_midwifery_cta.png">
+				<img id="logo" src="primarycare_midwifery_logo.png">
+				
+				<img id="intro_text1" src="primarycare_midwifery_intro01.png">
+				<img id="intro_text2" src="primarycare_midwifery_intro02.png">
+
+				<div id="end_bg" class="end-bg">
+					<img id="end_frame_text01" src="primarycare_midwifery_endtext01.png" >
+					<img id="end_frame_text02" src="primarycare_midwifery_endtext02.png" >
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script>
+
+				(function() {
+
+					console.log('ready');
+				  
+					var bgImg = document.querySelector("#bg_img"),
+							vignette = document.querySelector("#vignette"),
+							introText1 = document.querySelector("#intro_text1"),
+							introText2 = document.querySelector("#intro_text2"),
+							endBg = document.querySelector("#end_bg"),
+							endText01 = document.querySelector("#end_frame_text01"),
+							endText02 = document.querySelector("#end_frame_text02"),
+							// endText03 = document.querySelector("#end_frame_text03"),
+							tlIntro = new TimelineLite(),			  		
+							tlEnding = new TimelineLite(),
+							tlMaster = new TimelineLite({paused:true});
+
+					tlIntro
+					.to(bgImg, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
+					.to(vignette, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
+					.to(introText1, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "intro+=0.5")
+					.to(introText2, 0.5, {autoAlpha:1, ease:Power2.easeOut}, "intro+=1.5")
+
+					tlEnding
+					
+					.to(introText1, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
+					.to(introText2, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
+					.to(vignette, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
+					.to(bgImg, 1, {x:"+=145", ease:Power1.easeInOut}, "ending")
+					.from(endBg, .5, {autoAlpha:0, ease:Power1.easeInOut}, "ending+=0.5")
+					.from(endText01, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=1.0")
+					.from(endText02, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=1.75")
+					
+
+					tlMaster.add(tlIntro);
+					tlMaster.add(tlEnding, 4);
+					tlMaster.play();
+
+					TweenMax.set(banner, {autoAlpha:1});
+
+				 //  // ————————
+				 //  // CLICKTAG
+				  
+				  // event option for clicktag
+				 	  banner.onclick = function() {
+				//replays ad on click
+					tlMaster.restart();
+
+				//   	window.open(clickTag, "_blank");
+				 }
+
+				  // ————————
+				})();    
+				
+		</script>
+	</body>
+
+<!-- Mirrored from workalicious.com/dpc/presence-health-2017/php-midwifery/300x250/PHP-Midwifery-Peace-300x250/php-midwifery-peace-300x250.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 21:31:47 GMT -->
+</html>

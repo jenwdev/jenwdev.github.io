@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from workalicious.com/dpc/presence-health-2017/php-midwifery/300x600/PHP-Midwifery-Peace-300x600/php-midwifery-peace-300x600.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 21:31:51 GMT -->
+<head>
+		
+		<meta charset="utf-8">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Presence Health: Midwifery - Peace of Mind - 300x600</title>
+
+		<script>
+			var clickTag = "";
+		</script>
+
+		<style>
+			body {
+				padding: 0px;
+				margin: 0px;
+				font-size: 100%;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				background-color: #ffffff;
+			}
+
+			#container {
+				position: relative;
+				width: 300px;
+				height: 600px;
+				overflow: hidden;
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+
+			#banner {
+				visibility: hidden;
+				position: relative;
+				overflow: hidden;
+				box-sizing: border-box;
+				width: 300px;
+				height: 600px;
+				/*border: 1px solid #010101;*/
+				background-color: #ffffff;
+				cursor: pointer;
+			}
+
+			.border {
+				z-index: 20;
+				position: absolute;
+				top: 0;
+				left: 0;
+				box-sizing: border-box;
+				width: 300px;
+				height: 600px;
+				border: 1px solid #010101;
+			}
+
+			#bg_img {
+				z-index: 10;
+				visibility: hidden;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 300px;
+				height: 435px;
+			}
+
+			#logo {
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 497px;
+				left: 0px;
+				width: 300px;
+				height: 102px;
+			}
+			
+			#cta_btn {
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 435px;
+				left: 0;
+				width: 300px;
+				height: 63px;
+			}
+
+			
+			#intro_text1,
+			#intro_text2 {
+				z-index: 11;
+				position: absolute;
+				top: 328px;
+				left: 0;
+				visibility: hidden;
+				width: 300px;
+				height: 107px;
+			}
+
+
+			.end-bg {
+				z-index: 11;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 300px;
+				height: 182px;
+				background-color: #ffffff;
+			}
+
+			#end_frame_text01,
+			#end_frame_text02 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 300px;
+				height: 182px;
+			}
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			 
+			<div id="banner">
+				<div class="border"></div>
+
+				<div id="end_bg" class="end-bg">
+					<img id="end_frame_text01" src="primarycare_midwifery_endtext01.png" >
+					<img id="end_frame_text02" src="primarycare_midwifery_endtext02.png" >
+				</div>
+
+
+				<img id="bg_img" src="primarycare_midwifery_bg.jpg">
+				<img id="cta_btn" src="primarycare_midwifery_cta.png">
+				<img id="logo" src="primarycare_midwifery_logo.png">
+				
+				<img id="intro_text1" src="primarycare_midwifery_intro01.png">
+				<img id="intro_text2" src="primarycare_midwifery_intro02.png">
+
+
+
+			</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script>
+
+				(function() {
+
+					console.log('ready');
+				  
+					var bgImg = document.querySelector("#bg_img"),
+							introText1 = document.querySelector("#intro_text1"),
+							introText2 = document.querySelector("#intro_text2"),
+							endBg = document.querySelector("#end_bg"),
+							endText01 = document.querySelector("#end_frame_text01"),
+							endText02 = document.querySelector("#end_frame_text02"),
+							tlIntro = new TimelineLite(),			  		
+							tlEnding = new TimelineLite(),
+							tlMaster = new TimelineLite({paused:true});
+
+					tlIntro
+					.to(bgImg, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
+					.to(introText1, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "intro+=0.5")
+					.to(introText2, 0.5, {autoAlpha:1, ease:Power2.easeOut}, "intro+=1.5")
+
+					tlEnding
+					.to(bgImg, 1, {y:"+=170", ease:Power1.easeOut}, "ending")
+					.from(endBg, 1, {autoAlpha:0, ease:Power1.easeOut}, "ending+=0.0")
+					.to(introText1, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
+					.to(introText2, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
+					.from(endText01, 0.1, {autoAlpha:0, ease:Power2.easeOut}, "ending+=0.0")
+					.from(endText02, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=1.0")
+
+					tlMaster.add(tlIntro);
+					tlMaster.add(tlEnding, 4);
+					tlMaster.play();
+
+					TweenMax.set(banner, {autoAlpha:1});
+
+				 //  // ————————
+				 //  // CLICKTAG
+				  
+				  // event option for clicktag
+				  banner.onclick = function() {
+				//replays ad on click
+					tlMaster.restart();
+
+				//   	window.open(clickTag, "_blank");
+				 }
+
+				  // ————————
+				})();    
+				
+		</script>
+	</body>
+
+</html>
