@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		
+		<meta charset="utf-8">
+		<meta name="ad.size" content="width=160,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Presence Health: N.E.W You Center - 160x600</title>
+
+		<script>
+			var clickTag = "";
+		</script>
+
+		<style>
+			body {
+				padding: 0px;
+				margin: 0px;
+				font-size: 100%;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				background-color: #ffffff;
+			}
+
+			#container {
+				position: relative;
+				width: 160px;
+				height: 600px;
+				overflow: hidden;
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+
+			#banner {
+				visibility: hidden;
+				position: relative;
+				overflow: hidden;
+				box-sizing: border-box;
+				width: 160px;
+				height: 600px;
+				background-color: #bcd534;
+				cursor: pointer;
+			}
+
+			.border {
+				z-index: 20;
+				position: absolute;
+				top: 0;
+				left: 0;
+				box-sizing: border-box;
+				width: 160px;
+				height: 600px;
+				border: 1px solid #707179;
+			}
+
+			#footer {
+				visibility: hidden;
+				position: absolute;
+				top: 417px;
+				right: 0px;
+				width: 160px;
+				height: 183px;
+				background-color: white;
+			}
+
+			#logo {
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 59px;
+				right: 0px;
+				width: 160px;
+				height: 55px;
+			}
+			
+			#cta_btn {
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 139px;
+				left: 23px;
+				width: 114px;
+				height: 31px;
+			}
+
+			#text1 {
+	visibility: hidden;
+	position: absolute;
+	top: 71px;
+	left: 0;
+	width: 160px;
+	height: 273px;
+			}
+
+			#text2 {
+				visibility: hidden;
+				position: absolute;
+				top: 81px;
+				left: 0;
+				width: 160px;
+				height: 134px;
+			}
+
+			#text3 {
+				visibility: hidden;
+				position: absolute;
+				top: 226px;
+				left: 0;
+				width: 160px;
+				height: 89px;
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			 
+			<div id="banner">
+				<div class="border"></div>
+				
+				<div id="footer">
+					<img id="cta_btn" src="newyou_cta.jpg">
+					<img id="logo" src="newyou_logo.jpg">	
+				</div>
+
+				<img id="text1" src="newyou_text01.png">
+				
+			</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script>
+
+				(function() {
+				  
+					var text1 = document.querySelector("#text1"),
+						footer = document.querySelector("#footer"),
+						logo = document.querySelector("#logo"),
+						cta = document.querySelector("#cta_btn"), 
+						tlIntro = new TimelineLite(),			  		
+						tlEnding = new TimelineLite(),
+						tlMaster = new TimelineLite({paused:true});
+
+					tlIntro
+					.to(text1, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "intro+=0.0")
+
+					.from(footer, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "intro+=1.0")
+					.from(logo, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "intro+=1.0")
+					.from(cta, 0.3, {y:10, autoAlpha:0, ease:Power2.easeOut}, "intro+=1.5")
+
+					tlMaster.add(tlIntro);
+					tlMaster.play();
+
+					TweenMax.to(banner, 0.5, {autoAlpha:1});
+
+				  // ————————
+					  // ————————
+				  // CLICKTAG
+				  // event option for clicktag
+				//   turn off for portfolio
+				banner.onclick = function() {
+				//replays ad on click
+					tlMaster.restart();
+
+				//   	window.open(clickTag, "_blank");
+				 }
+
+
+				  // ————————
+				})();    
+				
+		</script>
+	</body>
+
+
+</html>

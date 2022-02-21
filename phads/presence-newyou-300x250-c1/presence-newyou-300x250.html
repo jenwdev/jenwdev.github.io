@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="ad.size" content="width=300,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Presence Health: N.E.W You Center - 300x250</title>
+
+		<script>
+			var clickTag = "";
+		</script>
+
+		<style>
+			body {
+				padding: 0px;
+				margin: 0px
+				font-size: 100%;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				background-color: #ffffff;
+			}
+
+			#container {
+				position: relative;
+				width: 300px;
+				height: 250px;
+				overflow: hidden;
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+
+			#banner {
+				visibility: hidden;
+				position: relative;
+				overflow: hidden;
+				box-sizing: border-box;
+				width: 300px;
+				height: 250px;
+				background-color: #ffffff;
+				cursor: pointer;
+			}
+
+			.border {
+				z-index: 20;
+				position: absolute;
+				top: 0;
+				left: 0;
+				box-sizing: border-box;
+				width: 300px;
+				height: 250px;
+				border: 1px solid #010101;
+			}
+
+			#bg_img {
+				z-index: 10;
+				visibility: hidden;
+				position: absolute;
+				top: 0px;
+				left: -74px;
+				width: 413px;
+				height: 257px;
+			}
+
+			#logo {
+				visibility: hidden;
+				z-index: 13;
+				display: block;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				width: 145px;
+				height: 46px;
+			}
+			
+			#cta_btn {
+				visibility: hidden;
+				z-index: 13;
+				display: block;
+				position: absolute;
+				top: 204px;
+				left: 0;
+				width: 156px;
+				height: 46px;
+			}
+
+			#intro_text1 {
+				z-index: 11;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				visibility: hidden;
+				width: 300px;
+				height: 57px;
+			}
+
+			.text-bg {
+	z-index: 11;
+	position: absolute;
+	top: 161px;
+	left: 0;
+	width: 300px;
+	height: 43px;
+	background-color: #bcd534;
+			}
+
+			#text01,
+			#text02 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 300px;
+				height: 43px;
+			}
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			 
+			<div id="banner">
+				<div class="border"></div>
+				<img id="bg_img" src="newyou_img.jpg">
+				<img id="cta_btn" src="newyou_cta.png">
+				<img id="logo" src="newyou_logo.png">
+				
+				<img id="intro_text1" src="newyou_intro01.png">
+
+				<div id="text_bg" class="text-bg">
+					<img id="text01" src="newyou_text01.png" >
+					<img id="text02" src="newyou_text02.png" >
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script>
+
+				(function() {
+				  
+					var bgImg = document.querySelector("#bg_img"),
+						introText1 = document.querySelector("#intro_text1"),
+						textBg = document.querySelector("#text_bg"),
+						text01 = document.querySelector("#text01"),
+						text02 = document.querySelector("#text02"),
+						cta_btn = document.querySelector("#cta_btn"),
+						logo = document.querySelector("#logo"),
+						tlIntro = new TimelineLite(),			  		
+						tlEnding = new TimelineLite(),
+						tlMaster = new TimelineLite({paused:true});
+
+					tlIntro
+					.add("intro")
+					.to(bgImg, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
+					.to(introText1, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "intro+=0.5")
+					.to(bgImg, 2, {x:20, scale:0.76, ease:Power1.easeInOut, transformOrigin:"top center"}, "intro+=3.0")
+					.to(introText1, 1, {autoAlpha:0, ease:Power2.easeInOut}, "intro+=3.0")
+
+
+					tlEnding
+					.add("ending")
+					.from(textBg, 1, {autoAlpha:0, ease:Power1.easeInOut, transformOrigin:"bottom center"}, "ending+=0.00")
+					.from(text01, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=0.75")
+					.from(cta_btn, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=0.5")
+					.from(logo, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=0.5")
+					.to(text01, 0.5, {autoAlpha:0, ease:Power1.easeOut}, "ending+=3.5")
+					.from(text02, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, "ending+=3.5")
+
+					tlMaster.add(tlIntro);
+					tlMaster.add(tlEnding, 4);
+					tlMaster.play();
+					//tlMaster.repeat(3);
+					// tlMaster.addPause(5);
+
+					TweenMax.to(banner, 0.5, {autoAlpha:1});
+
+				  // ————————
+				  // CLICKTAG
+				  // event option for clicktag
+				//   turn off for portfolio
+				  banner.onclick = function() {
+				//replays ad on click
+					tlMaster.restart();
+
+				//   	window.open(clickTag, "_blank");
+				 }
+
+				  // ————————
+				})();    
+				
+		</script>
+	</body>
+</html>
