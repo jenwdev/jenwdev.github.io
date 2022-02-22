@@ -92,11 +92,11 @@
 			#intro_text1 {
 				z-index: 11;
 				position: absolute;
-				top: 70px;
-				left: 135px;
+				top: 174px;
+				left: 0px;
 				visibility: hidden;
-				width: 165px;
-				height: 70px;
+				width: 300px;
+				height: 30px;
 			}
 
 			.end-bg {
@@ -131,12 +131,12 @@
 			<div id="banner">
 				<div class="border"></div>
 				<img id="bg_img" src="primarycare_midwifery_bg.jpg">
-				<img id="vignette" src="primarycare_midwifery_vignette.png">
+				<!-- <img id="vignette" src="primarycare_midwifery_vignette.png"> -->
 				<img id="cta_btn" src="primarycare_midwifery_cta.png">
 				<img id="logo" src="primarycare_midwifery_logo.png">
 				
-				<img id="intro_text1" src="primarycare_midwifery_intro01.png">
-				<img id="intro_text2" src="primarycare_midwifery_intro02.png">
+				<img id="intro_text1" src="primarycare_midwifery_intro001.png">
+				<img id="intro_text2" src="primarycare_midwifery_intro002.png">
 
 				<div id="end_bg" class="end-bg">
 					<img id="end_frame_text01" src="primarycare_midwifery_endtext01.png" >
@@ -155,7 +155,7 @@
 					console.log('ready');
 				  
 					var bgImg = document.querySelector("#bg_img"),
-							vignette = document.querySelector("#vignette"),
+							// vignette = document.querySelector("#vignette"),
 							introText1 = document.querySelector("#intro_text1"),
 							introText2 = document.querySelector("#intro_text2"),
 							endBg = document.querySelector("#end_bg"),
@@ -168,7 +168,7 @@
 
 					tlIntro
 					.to(bgImg, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
-					.to(vignette, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
+					// .to(vignette, 0.3, {autoAlpha:1, ease:Power2.easeInOut}, "intro")
 					.to(introText1, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "intro+=0.5")
 					.to(introText2, 0.5, {autoAlpha:1, ease:Power2.easeOut}, "intro+=1.5")
 
@@ -176,7 +176,7 @@
 					
 					.to(introText1, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
 					.to(introText2, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
-					.to(vignette, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
+					// .to(vignette, 1, {autoAlpha:0, ease:Power2.easeInOut}, "ending")
 					.to(bgImg, 1, {x:"+=145", ease:Power1.easeInOut}, "ending")
 					.from(endBg, .5, {autoAlpha:0, ease:Power1.easeInOut}, "ending+=0.5")
 					.from(endText01, 0.3, {autoAlpha:0, ease:Power2.easeOut}, "ending+=1.0")
@@ -206,5 +206,4 @@
 		</script>
 	</body>
 
-<!-- Mirrored from workalicious.com/dpc/presence-health-2017/php-midwifery/300x250/PHP-Midwifery-Peace-300x250/php-midwifery-peace-300x250.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 21:31:47 GMT -->
 </html>
