@@ -1,7 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
-
+.title {
+    padding-top: 9rem;
+    padding-bottom: 1rem;
+}
+.pd25{
+    padding-top: 25px;  
+}
 .card-img-top {
 	width: 100%;
 }
