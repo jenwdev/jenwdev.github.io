@@ -5,6 +5,15 @@
     padding-top: 9rem;
     padding-bottom: 1rem;
 }
+
+section {
+    padding-top: 5rem;
+}
+
+.title {
+    padding-top: 5rem;
+}
+
 .pd25{
     padding-top: 25px;  
 }
@@ -62,3 +71,9 @@
     text-decoration: underline;
 }
 
+
+.inner-button{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
